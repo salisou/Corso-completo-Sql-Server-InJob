@@ -268,5 +268,4 @@ SELECT
 FROM Studenti st
 RIGHT JOIN Iscrizioni i
 	ON i.StudenteId = st.StudenteId;
-
 -----------------------------------------------------------------------------------------
