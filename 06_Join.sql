@@ -55,6 +55,7 @@ SELECT * FROM Studenti, Iscrizioni; -- da non fare⚠️⚠️⚠️
 -- Codice fiscale
 -- Data Iscrizione
 
+-- Restituire la lista deli tudenti scritti
 SELECT 
 	*
 FROM Studenti as s
@@ -253,3 +254,19 @@ SELECT
 	DATEPART(MINUTE, OraInizio) AS Minuti,
 	DATEPART(SECOND, OraInizio) AS Secondi
 FROM Lezioni;
+
+------------------------------------------------------------------------------------------
+/*
+	RIGHT JOIN
+	Fa il contrario della "LEFT JOIN"
+	Restituisce tutti i record della tabella destra
+*/
+SELECT 
+	st.Nome + ' ' + st.Cognome as Studene,
+	st.CodiceFiscale as CF,
+	ISNULL(CONVERT(VARCHAR, i.DataIscrizione, 105), 'Data non definita') AS [Data Iscrizione]
+FROM Studenti st
+RIGHT JOIN Iscrizioni i
+	ON i.StudenteId = st.StudenteId;
+
+-----------------------------------------------------------------------------------------
