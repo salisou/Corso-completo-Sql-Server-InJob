@@ -12,7 +12,7 @@
 -- Obiettivo
 --	Trovare gli studenti che hanno preso il voto massimo in tutti i corsi.
 
--- 🔎 passo 1 Trovare il voto massimo in intero
+-- 🔎 passo 1 Trovare il voto massimo. Convertire in intero
 SELECT CAST(MAX(Voto) AS INT) [Voto Massimo] FROM Voti; -- 30
 
 -- 🔥Query finale sottoquery (SubQuery)
@@ -92,7 +92,7 @@ WHERE StudenteId IN (
 SELECT 
 	Nome, 
 	Cognome
-FROM Studenti
+FROM Studenti;
 
 -- Passo 2: Exists 1
 SELECT *
@@ -143,6 +143,7 @@ WHERE v.Voto > ( -- La sotto query calcola la media
 --7. SOTTOQUERY per trovare studenti senza data di nascita
 -- Obiettivo
 --Mostrare studenti iscritti a corsi senza data di nascita, usando sottoquery invece dei JOIN.
+
 
 
 

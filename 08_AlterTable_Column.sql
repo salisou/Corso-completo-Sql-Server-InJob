@@ -32,6 +32,9 @@ ALTER COLUMN Telefono VARCHAR(50) NOT NULL;
 -- RINOMINARE UNA COLONNA 
 EXEC sp_rename 'Studenti.DataNascita', 'Data_di_Nascita';
 
+-- RINOMINARE UNA TABELLA
+EXEC sp_rename 'Studenti', 'Studentes';
+
 -- ELIMINARE UNA COLONNA
 ALTER TABLE Studenti
 DROP COLUMN Indirizzo, Nazione,Provincia;
