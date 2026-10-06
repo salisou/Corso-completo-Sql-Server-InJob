@@ -213,3 +213,46 @@ SET Attendance_Status = 'Absent'
 WHERE AttendanceId = 2;
 
 SELECT * FROM Attendance WHERE AttendanceId = 2;
+
+-------------------------------------------------------
+-- Leggere dipendenti attivi
+SELECT 
+    Employee_Name,
+    Job_Title,
+    Salary
+FROM Employees
+WHERE Employment_status = 'Active';
+
+
+-- Aggiornare lo stipendio di un dipendente
+UPDATE Employees
+SET Salary = 123456000
+WHERE EmployeeId = 4;
+
+SELECT * FROM Employees WHERE EmployeeId = 4;
+
+-----------------------------------------------------
+-- DELETE permette di eliminare uno o più record di una tabella 
+/*
+    
+    DELETE FROM Nome_Tabella
+          WHERE <Condizioni di ricerca,,>
+*/
+-- C = CREATE
+INSERT INTO Employees 
+    (EmployeeId,  Employee_Name, DepartmentId, Job_Title, Hire_date, Employment_status)
+VALUES
+    (6,'Minei Rita', 4, 'Software Data Analyst', '2026-10-06', 'Resigned');
+
+-- R = READ
+select * from Employees WHERE EmployeeId = 6;
+
+-- U = UPDAETE
+Update Employees
+SET Salary = 45000,
+    Employment_status = 'Active'
+WHERE EmployeeId = 6;
+
+-- D = DELETE
+DELETE FROM Employees
+WHERE EmployeeId = 6;
