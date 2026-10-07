@@ -274,6 +274,135 @@ Particolare attenzione viene data al rischio di modificare accidentalmente più 
 
 ---
 
+## 10 - Condizioni
+
+**10_Condizioni.sql**
+
+Nuova sezione dedicata alla logica condizionale in SQL Server.
+
+Gli studenti imparano, con **10 esempi pratici**, a utilizzare:
+
+- uguaglianza e confronto;
+- AND;
+- OR;
+- NOT;
+- IN;
+- BETWEEN;
+- LIKE;
+- CASE;
+- IF / ELSE;
+- condizioni su valori NULL.
+
+L'obiettivo è imparare a trasformare una richiesta in una condizione SQL corretta.
+
+---
+
+## 11 - Stored Procedures
+
+**11_Stored_Procedures.sql**
+
+Il corso introduce le **Stored Procedure**, cioè programmi SQL salvati nel database e richiamabili tramite `EXEC`.
+
+Sono presenti procedure CRUD complete per tutte le tabelle principali di **ScuolaDb**:
+
+- Studenti;
+- Corsi;
+- Docenti;
+- Aule;
+- Iscrizioni;
+- DocentiCorso;
+- Lezioni;
+- Voti.
+
+Per ogni tabella sono disponibili procedure per:
+
+- lettura completa;
+- ricerca per ID;
+- INSERT;
+- UPDATE;
+- DELETE.
+
+Sono inoltre presenti **10 esempi di esecuzione** e controlli sui valori, compresa la validazione del voto da 0 a 30.
+
+Lo studente impara quindi a passare dalla semplice query alla logica riutilizzabile tipica delle applicazioni professionali.
+
+---
+
+## 12 - Viste
+
+**12_Viste.sql**
+
+La sezione introduce le **VIEW**, cioè query salvate che possono essere utilizzate come una tabella.
+
+Sono state aggiunte **10 viste didattiche e professionali**, tra cui:
+
+- studenti;
+- corsi;
+- studenti e corsi;
+- docenti e corsi;
+- lezioni e aule;
+- dettaglio dei voti;
+- media dei voti per studente;
+- report didattico completo;
+- corsi con numero di iscritti;
+- studenti senza voto.
+
+Il file contiene anche **10 esempi di utilizzo delle viste**.
+
+---
+
+## 13 - Gestione delle eccezioni
+
+**13_TRY_CATCH.sql**
+
+La sezione introduce la gestione degli errori con:
+
+- BEGIN TRY;
+- BEGIN CATCH;
+- ERROR_NUMBER();
+- ERROR_MESSAGE();
+- ERROR_LINE();
+- ERROR_PROCEDURE();
+- THROW;
+- BEGIN TRANSACTION;
+- COMMIT;
+- ROLLBACK;
+- XACT_STATE();
+- SET XACT_ABORT ON.
+
+Sono presenti **10 esempi progressivi**, inclusi errori di conversione, violazioni di FOREIGN KEY e UNIQUE, transazioni, rollback ed errori personalizzati.
+
+L'obiettivo è imparare a costruire script SQL più robusti e sicuri.
+
+---
+
+## 14 - 10 query professionali
+
+**14_10_Query_Professionali.sql**
+
+Un file finale di riepilogo con **10 query complete** che combinano gli argomenti studiati:
+
+- SELECT;
+- WHERE;
+- JOIN;
+- LEFT JOIN;
+- GROUP BY;
+- HAVING;
+- CASE;
+- funzioni aggregate;
+- sottoquery;
+- gestione dei NULL;
+- date e orari;
+- ordinamento.
+
+L'ultima query costruisce un report completo:
+
+**Studente → Iscrizione → Corso → Docente → Lezione → Aula**
+
+Questo permette allo studente di esercitarsi su uno scenario molto vicino alle richieste reali di un Data Analyst o di uno sviluppatore.
+
+---
+
 ## Gestione di NULL, date e orari
 
 Nel corso vengono affrontati anche problemi molto comuni nello sviluppo e nell'analisi dei dati.
@@ -375,6 +504,11 @@ Corso-completo-Sql-Server-InJob/
 ├── 07_SottoQuery.sql
 ├── 08_AlterTable_Column.sql
 ├── 09_UPDATE_DELETE.sql
+├── 10_Condizioni.sql
+├── 11_Stored_Procedures.sql
+├── 12_Viste.sql
+├── 13_TRY_CATCH.sql
+├── 14_10_Query_Professionali.sql
 ├── Esercizi.sql
 ├── Revisione_CRUD.sql
 │
@@ -383,7 +517,7 @@ Corso-completo-Sql-Server-InJob/
 │
 └── Materiali Excel/
     ├── Esercitazione sulle tabelle pivot.xlsx
-    └── Tutorial sulle formule1.xlsx
+    └── Tutorial sulle formule1.xlsx 
 ~~~
 
 ---
