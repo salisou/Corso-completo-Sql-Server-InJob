@@ -1,3 +1,16 @@
+## Stored Procedures
+
+Le Stored Procedures sono organizzate anche didatticamente nella cartella `Store procedures/`:
+
+- **Base**: CRUD su Studenti, Corsi, Docenti e Aule.
+- **Intermedio**: Iscrizioni, DocentiCorso e Lezioni.
+- **Avanzato**: Voti, validazioni e gestione degli errori con `THROW`.
+- Ogni argomento è in un file SQL separato.
+- Sono presenti script `00_Esecuzione_*.sql` per eseguire rapidamente le procedure del livello.
+- Il file `11_Stored_Procedures.sql` originale rimane come script completo di riferimento.
+
+Percorso consigliato: **Base → Intermedio → Avanzato → TRY/CATCH → TRANSACTION → VIEW → API**.
+
 # Corso completo SQL Server
 
 ## Impara SQL Server partendo dalle basi fino alle query relazionali
