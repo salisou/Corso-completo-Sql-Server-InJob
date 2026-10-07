@@ -641,3 +641,16 @@ Il corso è indicato per:
 Materiale didattico per lo studio e la formazione professionale su SQL Server.
 
 © 2025 – Tutti i diritti riservati – Docente Moussa Salisou
+
+
+## Nuova struttura Data Analytics
+
+Il corso è stato esteso con una struttura didattica **Base → Intermedio → Avanzato**. Ogni argomento specialistico è separato in file dedicati e contiene spiegazioni, esempi e utilizzo pratico.
+
+### VIEW
+La cartella `Views/` contiene una VIEW per file, divisa per livello.
+
+### Esercizi e correzioni
+Le cartelle `Esercizi/` e `Correzioni/` hanno la stessa struttura Base, Intermedio e Avanzato. Lo studente deve prima svolgere gli esercizi e successivamente consultare le correzioni.
+
+Gli esercizi avanzati introducono progressivamente CTE, ranking, funzioni finestra, KPI, LAG/LEAD e query orientate al Data Analytics.
