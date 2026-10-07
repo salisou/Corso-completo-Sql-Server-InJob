@@ -492,8 +492,38 @@ Questi materiali possono essere utilizzati come supporto per comprendere il rapp
 
 ## Struttura del repository
 
+Il repository è organizzato anche per **aree didattiche**, così lo studente può seguire il corso in modo progressivo.
+
 ~~~text
 Corso-completo-Sql-Server-InJob/
+│
+├── 01_Fondamenti/
+│   └── README.md
+│
+├── 02_Query/
+│   └── README.md
+│
+├── 03_DDL_DML/
+│   └── README.md
+│
+├── 04_Programmability/
+│   └── README.md
+│
+├── 05_Esercizi/
+│   └── README.md
+│
+├── 06_Materiali/
+│   └── README.md
+│
+├── Store procedures/
+│   └── procedure create nelle fasi precedenti
+│
+├── Materiali/
+│   └── materiale di supporto
+│
+├── Materiali Excel/
+│   ├── Esercitazione sulle tabelle pivot.xlsx
+│   └── Tutorial sulle formule1.xlsx
 │
 ├── 01_creazione_Database.sql
 ├── 02_Insert.sql
@@ -504,6 +534,7 @@ Corso-completo-Sql-Server-InJob/
 ├── 07_SottoQuery.sql
 ├── 08_AlterTable_Column.sql
 ├── 09_UPDATE_DELETE.sql
+├── 10_Base_Store_procedure.sql
 ├── 10_Condizioni.sql
 ├── 11_Stored_Procedures.sql
 ├── 12_Viste.sql
@@ -511,14 +542,14 @@ Corso-completo-Sql-Server-InJob/
 ├── 14_10_Query_Professionali.sql
 ├── Esercizi.sql
 ├── Revisione_CRUD.sql
-│
-├── Materiali/
-│   └── materiale di supporto
-│
-└── Materiali Excel/
-    ├── Esercitazione sulle tabelle pivot.xlsx
-    └── Tutorial sulle formule1.xlsx 
+└── README.md
 ~~~
+
+### Percorso consigliato
+
+**Fondamenti → Query → DDL/DML → JOIN e sottoquery → Condizioni → Stored Procedure → VIEW → TRY/CATCH → esercizi professionali → HR Analytics**
+
+Le cartelle numerate sono state aggiunte come **indice didattico**. Gli script originali nella root e la precedente cartella `Store procedures/` vengono mantenuti per non perdere materiale e storico del corso.
 
 ---
 
